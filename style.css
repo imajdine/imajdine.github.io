@@ -1,0 +1,237 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Lucida Sans Unicode;
+  background-color: #424549;
+  overflow: hidden;
+  color: white;
+}
+
+ul.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 500%;
+  background-color: #36393e;
+  font-size: 150%;
+}
+
+
+li.link{
+  float: right;
+  display: block;
+  padding: 8px;
+  background-color: #36393E;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.link:hover{
+  
+  background-color: #1e2124;
+}
+li.temp{
+  float: right;
+  display: block;
+  padding: 8px;
+  background-color: #36393E;
+  color:#36393E;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#active .link{
+  background-color: #454FBF;
+}
+
+#name .link{
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color: #7289DA;
+  text-decoration: none;
+}
+h1.header{
+  margin-left: 10px;
+  opacity: 0;
+}
+
+#first h1.header{
+  margin-bottom: -25px;
+  margin-top:75px;
+  animation: fadein 2.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  color: #7289da;
+}
+h3{
+  margin-left: 10px;
+  opacity: 0;
+}
+#first h3{
+  animation: fadein 2.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+#second h1.header{
+  margin-bottom: -17px;
+  animation: fadein 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  color: #7289da;  
+}
+
+li.project{
+  font-weight: bold;
+  opacity:0;
+  animation: fadein 2.5s;
+  animation-fill-mode: forwards;
+}
+#cheatcode .project{
+  font-size: 20px;
+  animation-delay: 3s;
+}
+ul.cheater{
+  list-style-type: none;
+  margin-left: -30px;
+}
+#headercheat h1.header{
+  margin-bottom: -17px;
+  animation: fadein 2.5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  color: #7289da;  
+}
+#cheatcode2 .project{
+  font-size: 20px;
+  animation-delay: 5s;
+}
+#first .project{
+  animation-delay: 2.5s;
+}
+#second .project{
+  animation-delay: 3s;
+}
+#third .project{
+  animation-delay: 3.5s;
+}
+#fourth .project{
+  animation-delay: 4s;
+}
+#fifth .project{
+  animation-delay: 4.5s;
+}
+#sixth .project{
+  animation-delay: 5s;
+}
+#third h1.header{
+  margin-bottom: -17px;
+  animation: fadein 2.5s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  color: #7289da;  
+}
+#seventh .project{
+  animation-delay: 6.5s;
+}
+#eighth .project{
+  animation-delay: 7s;
+}
+#ninth .project{
+  animation-delay: 7.5s;
+}
+#tenth .project{
+  animation-delay: 8s;
+}
+#eleventh .project{
+  animation-delay: 8.5s;
+}
+#twelveth .project{
+  animation-delay: 9s;
+}
+
+button.continue{
+  margin-left: 10px;
+  color: #7289da; 
+  font-weight: bold;
+  background-color: transparent;
+  border-style: hidden;
+  font-size: 0;
+  animation: fadein 2.5s, h1bigger 2.5s;
+  animation-delay: 10s;
+  animation-fill-mode:forwards;
+  transition:0.3s;
+}
+.continue:hover{
+  color:#454FBF;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.continue:active{
+  opacity: 0.7;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #454FBF;
+  color: white;
+  
+}
+
+#finalizelanding .continue{
+  animation-delay: 6s;
+}
+
+@keyframes h1bigger{
+  from {font-size: 0px}
+  to {font-size: 40px}
+}
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+
+ul.compgallery{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+li.item{
+  list-style-type: none;
+  text-align: center;
+  font-size: 75px;
+  padding: 0;
+  margin-right: 40px;
+}
+
+button.transfer{
+  margin-left: 10px;
+  color: #7289da; 
+  font-weight: bold;
+  background-color: #23272A;
+  border-style: hidden;
+  font-size: 75px;
+  transition:0.3s;
+}
+.transfer:hover{
+  color:#454FBF;
+  background-color: #FFFFFF;
+  box-shadow: 0 15px 32px 0 rgba(0,0,0,0.2), 0 20px 40px 0 rgba(0,0,0,0.19);
+}
+.transfer:active{
+  opacity: 0.7;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #454FBF;
+  color: white;
+  
+}
