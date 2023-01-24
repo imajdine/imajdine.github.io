@@ -4,9 +4,15 @@ html, body {
   width: 100%;
   font-family: Lucida Sans Unicode;
   background-color: #424549;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   color: white;
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 
 ul.navbar{
   list-style-type: none;
@@ -55,22 +61,28 @@ li.temp{
   background-color: #7289DA;
   text-decoration: none;
 }
-h1.header{
+h1{
   margin-left: 10px;
-  opacity: 0;
-}
-
-#first h1.header{
-  margin-bottom: -25px;
+  margin-bottom: 5px;
+  color: #5865F2;
+}  
+#first h1{
   margin-top:75px;
-  animation: fadein 2.5s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  color: #7289da;
+  text-align: center;
+  font-size: 45px;
 }
 h3{
   margin-left: 10px;
-  opacity: 0;
+  margin-right: 10px;
+}
+h2{
+  margin-left: 10px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  color: #7289DA;
+}
+h2.question{
+  margin-top: 10px;
 }
 #first h3{
   animation: fadein 2.5s;
@@ -87,13 +99,9 @@ h3{
 
 li.project{
   font-weight: bold;
-  opacity:0;
-  animation: fadein 2.5s;
-  animation-fill-mode: forwards;
 }
 #cheatcode .project{
   font-size: 20px;
-  animation-delay: 3s;
 }
 ul.cheater{
   list-style-type: none;
@@ -101,14 +109,10 @@ ul.cheater{
 }
 #headercheat h1.header{
   margin-bottom: -17px;
-  animation: fadein 2.5s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
   color: #7289da;  
 }
 #cheatcode2 .project{
   font-size: 20px;
-  animation-delay: 5s;
 }
 #first .project{
   animation-delay: 2.5s;
@@ -155,14 +159,15 @@ ul.cheater{
 }
 
 button.continue{
-  margin-left: 10px;
+  margin-left: 5px;
   color: #7289da; 
   font-weight: bold;
+  margin-bottom: 50px;
   background-color: transparent;
   border-style: hidden;
   font-size: 0;
   animation: fadein 2.5s, h1bigger 2.5s;
-  animation-delay: 10s;
+  animation-delay: 1s;
   animation-fill-mode:forwards;
   transition:0.3s;
 }
@@ -176,6 +181,13 @@ button.continue{
   background-color: #454FBF;
   color: white;
   
+}
+
+#mini .continue{
+  animation: none;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 #finalizelanding .continue{
@@ -197,6 +209,9 @@ a{
   text-decoration: none;
 }
 
+ul.projects{
+  margin-top: -20px;
+}
 
 ul.compgallery{
   margin: 0;
@@ -234,4 +249,8 @@ button.transfer{
   background-color: #454FBF;
   color: white;
   
+}
+
+.prettyprint{
+  font-size: 15px;
 }
